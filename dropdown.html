@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        #menu {
+            border: 1px solid black;
+        }
+
+        #menu>ul {
+            background: rgb(225, 225, 225);
+        }
+
+        #menu ul {
+            list-style: none;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+
+        #menu ul a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            line-height: 32px;
+            font-weight: bold;
+            padding: 0 15px;
+            display: block;
+        }
+
+        #menu ul li {
+            float: left;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu ul ul {
+            position: absolute;
+            background: rgb(0, 255, 242);
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+
+        #menu ul ul li {
+            float: none;
+            width: 200px;
+            border-left: 1px solid rgb(0, 255, 242);
+        }
+
+        #menu ul ul li:hover {
+            border-left: 1px solid rgb(0, 0, 0);
+        }
+
+        #menu ul ul ul {
+            top: 5px;
+            left: 100%;
+        }
+
+        #menu ul li:hover>ul {
+            display: block;
+        }
+
+        #menu ul li:hover {
+            background: #b1fff9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pure CSS Dropdown menu</h1>
+    <div id="menu">
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li>
+                <a href="#">menu2</a>
+                <ul>
+                    <li><a href="#">subMenu1</a></li>
+                    <li>
+                        <a href="#">subMenu2</a>
+                        <ul>
+                            <li><a href="#">deepMenu1</a></li>
+                            <li>
+                                <a href="#">deepMenu2</a>
+                                <ul>
+                                    <li><a href="#">subDeepMenu1</a></li>
+                                    <li><a href="#">subDeepMenu2</a></li>
+                                    <li><a href="#">subDeepMenu3</a></li>
+                                    <li><a href="#">subDeepMenu4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">deepMenu3</a></li>
+                            <li><a href="#">deepMenu4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">subMenu3</a></li>
+                    <li><a href="#">subMenu4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu3</a></li>
+            <li>
+                <a href="#">menu4</a>
+                <ul>
+                    <li><a href="#">subMenu1</a></li>
+                    <li><a href="#">subMenu2</a></li>
+                    <li><a href="#">subMenu3</a></li>
+                    <li><a href="#">subMenu4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
